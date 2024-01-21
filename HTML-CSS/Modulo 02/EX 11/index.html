@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liks</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+        color: red;
+    }
+
+    a:visited {
+        color: darkred;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: black;
+    }
+
+    a:active {
+     color: yellow;
+    }
+/*
+    a::after {
+        content: '{link}';
+        text-decoration: none;
+        font-weight: normal;
+        color: white;
+    }
+    */
+
+    a::after {
+
+content: '♩';
+    }
+
+
+    a::before {
+  content: '♩' ;
+    }
+ 
+    /*  
+
+
+
+    # = ID 
+    . = Class 
+    : = pseudo-class
+    :: = pseudo -element
+
+    */
+</style>
+<body>
+    <h1>Personalisando Links</h1>
+
+    <li> <a href="https://www.google.com.br" target="_blank"> Github</a></li>
+    <li> <a href="https://www.google.com.br" target="_parent"> Canal do you tube</a> </li>
+    <li> <a href="https://www.google.com.br" target="_self">Site do Curso em Video</a> </li>
+</body>
+</html>
+
